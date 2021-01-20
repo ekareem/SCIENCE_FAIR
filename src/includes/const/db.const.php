@@ -1,0 +1,137 @@
+<?php
+	$DB = 'ekareem_db';
+	
+	$DB_COL_ACTIVE = 'Active';
+	
+	$DB_ADMIN = 'ADMIN';
+	$DB_ADMIN_COL_ID = 'AdminID';
+	$DB_ADMIN_COL_FIRST_NAME = 'FirstName';
+	$DB_ADMIN_COL_MIDDLE_NAME = 'MiddleName';
+	$DB_ADMIN_COL_LAST_NAME = 'LastName';
+	$DB_ADMIN_COL_EMAIL = 'Email';
+	$DB_ADMIN_COL_PASSWORD = 'Password';
+	$DB_ADMIN_COL_LEVEL = 'AdminLevelID';
+	$DB_ADMIN_COL_ACTIVE = 'Active';
+	
+	$DB_ADMIN_LEVEL = 'ADMIN_LEVEL';
+	$DB_ADMIN_LEVEL_COL_ID = 'AdminLevelID';
+	$DB_ADMIN_LEVEL_COL_NAME = 'LevelName';
+	
+	$DB_BOOTH = 'BOOTH';
+	$DB_BOOTH_COL_ID = 'BoothID';
+	$DB_BOOTH_COL_NUMBER = 'Number';
+	$DB_BOOTH_COL_ACTIVE = 'Active';
+	
+	$DB_CATEGORY = 'CATEGORY';
+	$DB_CATEGORY_COL_ID = 'CategoryID';
+	$DB_CATEGORY_COL_NAME = 'CategoryName';
+	$DB_CATEGORY_COL_ACTIVE = 'Active';
+	
+	$DB_CITY = 'CITY';
+	$DB_CITY_COL_ID = 'CityID';
+	$DB_CITY_COL_STATE_ID = 'StateID';
+	$DB_CITY_COL_NAME = 'CityName';
+	
+	$DB_COUNTY = 'COUNTY';
+	$DB_COUNTY_COL_ID = 'CountyID';
+	$DB_COUNTY_COL_STATE_ID = 'StateID';
+	$DB_COUNTY_COL_NAME = 'CountyName';
+	
+	
+	$DB_GENDER = 'GENDER';
+	$DB_GENDER_COL_ID = 'GenderID';
+	$DB_GENDER_COL_NAME = 'GenderName';
+	
+	$DB_GRADE = 'GRADE';
+	$DB_GRADE_COL_ID = 'GradeID';
+	$DB_GRADE_COL_NAME = 'GradeName';
+	$DB_GRADE_COL_ACTIVE = 'Active';
+	
+	$DB_JUDGE = 'JUDGE';
+	$DB_JUDGE_COL_ID = 'JudgeID';
+	$DB_JUDGE_COL_FIRST_NAME = 'FirstName';
+	$DB_JUDGE_COL_MIDDLE_NAME = 'MiddleName';
+	$DB_JUDGE_COL_LAST_NAME = 'LastName';
+	$DB_JUDGE_COL_TITLE = 'Title';
+	$DB_JUDGE_COL_HIGHEST = 'HighestDegreeEarned';
+	$DB_JUDGE_COL_EMPLOYER = 'Employer';
+	$DB_JUDGE_COL_EMAIL = 'Email';
+	$DB_JUDGE_COL_PASSWORD = 'Password';
+	$DB_JUDGE_COL_YEAR = 'Year';
+	$DB_JUDGE_COL_ACTIVE = 'Active';
+	
+	$DB_STATE = 'STATE';
+	$DB_STATE_COL_ID = 'StateID';
+	$DB_STATE_COL_CODE = 'StateCode';
+	$DB_STATE_COL_NAME = 'StateName';
+	
+	$DB_JCP = 'JUDGE_CATEGORY_PREFERENCE';
+	$DB_JCP_COL_ID = 'JudgeCategoryPreferenceID';
+	$DB_JCP_COL_JUDGE_ID = 'JudgeID';
+	$DB_JCP_COL_CATEGORY_ID = 'CategoryID';
+	
+	$DB_JGP = 'JUDGE_GRADE_PREFERENCE';
+	$DB_JGP_COL_ID = 'JudgeGradePreferenceID';
+	$DB_JGP_COL_JUDGE_ID = 'JudgeID';
+	$DB_JGP_COL_MIN_ID = 'minGradeID';
+	$DB_JGP_COL_MAX_ID = 'maxGradeID';
+	
+	
+	$DB_PROJECT = 'PROJECT';
+	$DB_PROJECT_COL_ID = 'ProjectID';
+	$DB_PROJECT_COL_NUMBER = 'ProjectNumber';
+	$DB_PROJECT_COL_TITLE = 'Title';
+	$DB_PROJECT_COL_ABSTRACT = 'Abstract';
+	$DB_PROJECT_COL_PGL_ID = 'ProjectGradeLevelID';
+	$DB_PROJECT_COL_CATEGORY_ID = 'CategoryID';
+	$DB_PROJECT_COL_BOOTH_ID = 'BoothID';
+	$DB_PROJECT_COL_NETWORK = 'CourseNetworkID';
+	$DB_PROJECT_COL_AVERAGE = 'AverageRanking';
+	$DB_PROJECT_COL_YEAR = 'Year';
+	
+	$DB_PGL = 'PROJECT_GRADE_LEVEL';
+	$DB_PGL_COL_ID = 'ProjectGradeLevelID';
+	$DB_PGL_COL_LEVEL_NAME = 'LevelName';
+	$DB_PGL_COL_MIN_ID = 'MinGradeID';
+	$DB_PGL_COL_MAX_ID = 'MaxGradeID';
+	
+
+	$DB_SCHEDULE = 'SCHEDULE';
+	$DB_SCHEDULE_COL_ID = 'ScheduleID';
+	$DB_SCHEDULE_COL_SESSION_ID = 'SessionID';
+	$DB_SCHEDULE_COL_PROJECT_ID = 'ProjectID';
+	$DB_SCHEDULE_COL_JUDGE_ID = 'JudgeID';
+	
+	$DB_SESSION = 'SESSION';
+	$DB_SESSION_COL_ID = 'SessionID';
+	$DB_SESSION_COL_DATE = 'Date';
+	$DB_SESSION_COL_START = 'StartTime';
+	$DB_SESSION_COL_END = 'EndTime';
+	$DB_SESSION_COL_ACTIVE = 'Active';
+	$DB_SESSION_COL_NUMBER = 'SessionNumber';
+	
+	$DB_SCHOOL = 'SCHOOL';
+	$DB_SCHOOL_COL_ID = 'SchoolID';
+	$DB_SCHOOL_COL_NAME = 'SchoolName';
+	$DB_SCHOOL_COL_CITY_ID = 'CityID';
+	$DB_SCHOOL_COL_COUNTY_ID = 'CountyID';
+	$DB_SCHOOL_COL_STATE_ID = 'StateID';
+	
+	$DB_SCORE = 'SCORE';
+	$DB_SCORE_COL_ID = 'ScoreID';
+	$DB_SCORE_COL_JUDGE_ID = 'JudgeID';
+	$DB_SCORE_COL_PROJECT_ID = 'ProjectID';
+	$DB_SCORE_COL_SCORE = 'Score';
+	
+	$DB_STUDENT = 'STUDENT';
+	$DB_STUDENT_COL_ID = 'StudentID';
+	$DB_STUDENT_COL_FIRST_NAME = 'FirstName';
+	$DB_STUDENT_COL_MIDDLE_NAME = 'MiddleName';
+	$DB_STUDENT_COL_LASTNAME_NAME = 'LastName';
+	$DB_STUDENT_COL_GRADE_ID = 'GradeID';
+	$DB_STUDENT_COL_GENDER_ID = 'GenderID';
+	$DB_STUDENT_COL_SCHOOL_ID = 'SchoolID';
+	$DB_STUDENT_COL_PROJECT_ID = 'ProjectID';
+	$DB_STUDENT_COL_YEAR = 'Year';
+	$DB_STUDENT_COL_ACTIVE = 'Active';
+	
